@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-900 hover:bg-gray-300 focus:ring-gray-500;
+  }
+  
+  .btn-success {
+    @apply bg-success-600 text-white hover:bg-success-700 focus:ring-success-500;
+  }
+  
+  .btn-warning {
+    @apply bg-warning-600 text-white hover:bg-warning-700 focus:ring-warning-500;
+  }
+  
+  .btn-danger {
+    @apply bg-danger-600 text-white hover:bg-danger-700 focus:ring-danger-500;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6;
+  }
+  
+  .input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+  
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .badge-success {
+    @apply bg-success-100 text-success-800;
+  }
+  
+  .badge-warning {
+    @apply bg-warning-100 text-warning-800;
+  }
+  
+  .badge-danger {
+    @apply bg-danger-100 text-danger-800;
+  }
+  
+  .badge-info {
+    @apply bg-primary-100 text-primary-800;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.spinner {
+  @apply animate-spin rounded-full border-2 border-gray-300 border-t-primary-600;
+}
+
+.event-stream {
+  @apply relative overflow-hidden;
+}
+
+.event-stream::before {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-transparent via-primary-100 to-transparent;
+  animation: stream-flow 2s linear infinite;
+}
+
+@keyframes stream-flow {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
