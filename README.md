@@ -356,13 +356,13 @@ REACT_APP_WEBSOCKET_URL=wss://your-websocket-url
 ```
 
 ### **Production Checklist**
-- ✅ AWS infrastructure deployed
-- ✅ Frontend built and deployed
-- ✅ Environment variables configured
-- ✅ Screenshots added to showcase features
-- ✅ Custom domain configured (optional)
-- ✅ SSL certificates enabled
-- ✅ Monitoring and alerts set up
+-  AWS infrastructure deployed
+-  Frontend built and deployed
+-  Environment variables configured
+-  Screenshots added to showcase features
+-  Custom domain configured (optional)
+-  SSL certificates enabled
+-  Monitoring and alerts set up
 
 ## Contributing
 
