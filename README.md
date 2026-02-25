@@ -1,6 +1,6 @@
-# IoT Event Processing Platform
+# PulseGrid
 
-A **production-ready**, serverless IoT platform built on AWS with **enterprise-grade authentication**. This system provides device telemetry ingestion, real-time alerting, command/control capabilities, and a comprehensive device management dashboard for IoT deployments.
+A **production-ready**, serverless IoT telemetry platform built on AWS with **enterprise-grade authentication**. This system provides device telemetry ingestion, real-time alerting, command/control capabilities, and a comprehensive device management dashboard for IoT deployments.
 
 ## **Project Status**
 
